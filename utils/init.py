@@ -101,9 +101,9 @@ else:
         f"游戏窗口宽度为{w}，高度为{h},缩放因子为{ScaleFactor},实际宽度为{RealWidth},实际高度为{RealHeight}"
     )
     logger.info(f"菜单栏高度为{menu_height},左上角偏移量为({OffsetX},{OffsetY})")
-    if not(RealWidth == 1280 and RealHeight == 720):
-        logger.warning("游戏窗口分辨率不是1280x720，请修改游戏显示模式为“1280x720 窗口”")
-        wait_exit()
+    # if not(RealWidth == 1280 and RealHeight == 720):
+    #     logger.warning("游戏窗口分辨率不是1280x720，请修改游戏显示模式为“1280x720 窗口”")
+    #     wait_exit()
 
 # 判断能否使用GPU
 if "CUDAExecutionProvider" in rt.get_available_providers():
